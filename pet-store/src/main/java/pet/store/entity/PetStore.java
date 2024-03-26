@@ -2,8 +2,8 @@ package pet.store.entity;
 
 import java.util.HashSet;
 import java.util.Set;
+
 import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,7 +22,7 @@ public class PetStore {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long petStoreId;
+	private Long petStoreId;
 	
 	private String petStoreName;
 	private String petStoreAddress;
@@ -48,3 +48,4 @@ public class PetStore {
 	private Set<Customer> customers = new HashSet<>();
  	
 }
+

@@ -1,7 +1,6 @@
 package pet.store.entity;
 
 import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,13 +18,13 @@ public class Employee {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long employeeId;
+	private Long employeeId;
 	
 	private String employeeFirstName;
 	private String employeeLastName;
 	
 	//@Column(unique = true)
-	private long employeePhone;
+	private String employeePhone;
 	private String employeeJobTitle;
 	
 	@EqualsAndHashCode.Exclude
